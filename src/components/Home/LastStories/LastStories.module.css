@@ -1,0 +1,98 @@
+.StoryContainer{
+    /* background-color: aqua; */
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    
+}
+
+.StoryContainer .GalleriesHEader{
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: start;
+    gap: 39rem;
+    align-items: center;
+    padding: 1rem;
+}
+.StoryContainer .GalleriesHEader .GalleryHeaderDescription{
+    /* background-color: rgb(21, 49, 49); */
+    padding: 0.5rem;
+}
+.StoryContainer .GalleriesHEader .GalleryHeaderDescription h1{
+    font-size: 2.3rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0.5rem;
+}
+.StoryContainer .GalleriesHEader .GalleryViewAll{
+    width: 8rem;
+    height: 2.9rem;
+    background-color: rgb(55, 52, 52);
+    color: #ece9e9;
+    border: none;
+    outline: none;
+
+}
+.ContainerStoryImages{
+    /* background-color: tomato; */
+    width: 100%;
+    height: 35rem;
+    padding: 1.6rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 60px;
+}
+@media (max-width: 768px) {
+  .StoryContainer {
+    padding: 1rem;
+  }
+
+  .StoryContainer .GalleriesHEader {
+    gap: 0.5rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .StoryContainer .GalleriesHEader .GalleryHeaderDescription h1 {
+    font-size: 1.8rem;
+  }
+
+  .StoryContainer .GalleriesHEader .GalleryViewAll {
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 0.9rem;
+  }
+
+  .ContainerStoryImages {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .StoryContainer .GalleriesHEader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .StoryContainer .GalleriesHEader .GalleryViewAll {
+    width: 100%;
+    text-align: center;
+    height: 3rem;
+    font-size: 1rem;
+  }
+
+  .StoryContainer .GalleriesHEader .GalleryHeaderDescription h1 {
+    font-size: 1.6rem;
+    text-align: left;
+  }
+
+  .ContainerStoryImages {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+}

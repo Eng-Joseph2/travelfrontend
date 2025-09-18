@@ -1,0 +1,124 @@
+.HeaderContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.Logo{
+    font-size: 1.3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    /* color: #fff; */
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: cente;
+    padding: 1.5rem;
+    /* background-color: antiquewhite; */
+}
+.TypoGraphy{
+    /* background-color: aqua; */
+    width: 50%;
+    height: 24.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0.5rem;
+
+}
+.sectionTypo{
+    /* background-color: tomato; */
+    width: 30rem;
+    height:10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content:start;
+    align-items: start;
+    padding: 0.5rem;
+}
+.sectionTypo span{
+    color: orange;
+}
+
+.cardsContainer{
+    width: 100;
+    height: 20rem;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 3rem;
+    padding: 1.4rem;
+}
+.CardDescription{
+    /* background-color: tomato; */
+    height: 13rem;
+    width: 20rem;
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 2rem;
+}
+.CardDescription h3{
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+.CardDescription p{
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+.Cards{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .HeaderContainer {
+        padding: 1rem 0.5rem;
+    }
+
+    .Logo {
+        font-size: 1.1rem;
+    }
+
+    .TypoGraphy {
+        width: 100%;
+        height: auto;
+        padding: 0 0.5rem;
+    }
+
+    .sectionTypo {
+        width: 100%;
+        height: auto;
+        padding: 0 0.5rem;
+    }
+
+    .cardsContainer {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .CardDescription {
+        width: 100%;
+        height: auto;
+        padding: 0.5rem 0;
+    }
+
+    .CardDescription h3 {
+        font-size: 1.8rem;
+    }
+
+    .CardDescription p {
+        font-size: 1.2rem;
+    }
+}

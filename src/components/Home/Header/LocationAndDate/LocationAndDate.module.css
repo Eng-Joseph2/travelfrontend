@@ -1,0 +1,81 @@
+.container{
+    /* background-color: aqua; */
+    width: 80%;
+    height: 7em;
+    margin-top: 3rem;
+    position: absolute;
+    bottom: -3rem;
+    margin-left: 6.9rem;
+    background-color: #ffff;
+    border-radius: 0.7rem;
+    /* border: 2px solid #ccc; */
+    /* margin-bottom: 3rem; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem;
+    gap: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+.container .Description{
+    /* background-color: aqua; */
+    width: 14rem;
+    height: 5rem;
+    padding: 0.4rem;
+}
+.container .Description .HeadDescription{
+    /* background-color: #FFDA32; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+}
+.container .Description p{
+    /* text-align: end; */
+    font-style: italic;
+    color: #ccc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 1.8rem;
+}
+.container  button{
+      background-color: #FFDA32;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 1.9rem;
+    width: 9.3rem;
+    height: 3.8rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .container {
+    position: static;
+    width: 90%;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 1.2rem;
+    margin: 2rem auto;
+    gap: 1rem;
+    display: none;
+  }
+
+  .container .Description {
+    width: 100%;
+    height: auto;
+  }
+
+  .container button {
+    width: 100%;
+    height: 3.2rem;
+    font-size: 1rem;
+  }
+
+  .container .Description p {
+    margin-left: 0;
+    text-align: left;
+  }
+}

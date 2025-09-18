@@ -1,0 +1,89 @@
+.container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.icon {
+  width: 60px;
+  margin: 0 auto 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 25px;
+  padding: 0 10px;
+}
+
+.formContainer {
+  background-color: #337fd8;
+  padding: 25px 20px;
+  border-radius: 20px 20px 0 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 14px;
+  text-align: left;
+}
+
+.input {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 12px;
+  color: white;
+  text-align: left;
+}
+
+.checkboxLabel a {
+  color: #dceaff;
+  text-decoration: underline;
+}
+
+.submitButton {
+  margin-top: 10px;
+  padding: 12px;
+  background-color: #121e3b;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.submitButton:disabled,.submitButton:disabled:hover{
+  background-color: gray;
+  color: #000;
+}
+
+.submitButton:hover {
+  background-color: #0a142b;
+}

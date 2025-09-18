@@ -1,0 +1,159 @@
+/* UserBooking.css */
+
+/* page wrapper */
+.table-page {
+  /* padding: 30px; */
+  background: #f4f6f9;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* card for table */
+.table-wrapper {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* title */
+.table-title {
+  margin: 0 0 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #222;
+}
+
+/* main table */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+/* head */
+.styled-table thead tr {
+  background-color: #2c7be5;
+  color: #fff;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* zebra rows */
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f9fafc;
+}
+
+/* hover effect */
+.styled-table tbody tr:hover {
+  background-color: #eef3fb;
+}
+
+.actions button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.actions .accept-btn {
+  background-color: #2ecc71; /* cagaar */
+  color: #fff;
+}
+
+.actions .accept-btn:hover {
+  background-color: #27ae60;
+  transform: scale(1.05);
+}
+
+.actions .valid-btn {
+  background-color: #3498db; /* buluug */
+  color: #fff;
+}
+
+.actions .valid-btn:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+  .dashboard {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .sidebar h2 {
+    display: none;
+  }
+
+  .sidebar ul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sidebar ul li {
+    margin: 0;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .main {
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .card p {
+    font-size: 16px;
+  }
+}
+
+/* ✅ Responsive for Mobile (phones) */
+@media (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr; /* 1 card per row */
+  }
+
+  .sidebar ul li {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  .main {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+}

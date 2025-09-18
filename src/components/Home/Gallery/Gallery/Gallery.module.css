@@ -1,0 +1,17 @@
+.Container{
+    /* background-color: rgb(9, 29, 29); */
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding: 1.5rem;
+    gap: 40px;
+}
+.Container img{
+    width: 18rem;
+    height: 20rem;
+    border-radius: 0.2rem;
+}

@@ -1,0 +1,250 @@
+.FooterContainer{
+    width: 100%;
+    height: 30rem;
+    background-color:#13253F;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 0%;
+    position: relative;
+}
+.FooterSections{
+    /* background-color: rgb(231, 145, 40); */
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5rem;
+    padding: 1.5rem;
+}
+.FooterContainer .FooterSections .FooterSection1{
+    /* background-color: aqua; */
+    width: 20rem;
+    height: 17rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    padding: 1rem;
+
+}
+.FooterContainer .FooterSections .FooterSection1 .Language {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    /* background-color: tomato; */
+    padding: 1rem;
+    gap: 13px;
+}
+.FooterContainer .FooterSections .FooterSection1 .Language label{
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    
+}
+.FooterContainer .FooterSections .FooterSection1 .Language input{
+    width: 15rem;
+    height: 2.6rem;
+    padding: 0.3rem;
+    outline: none;
+    border: 1px solid #beb5b5;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    background-color: transparent;
+}
+.FooterContainer .FooterSections .FooterSection1 .Company{
+    display: flex;
+    flex-direction: column;
+    justify-content: start; 
+    align-items: start;
+    /* background-color: tomato; */
+    /* padding: 1rem; */
+    /* gap: 19px; */
+    color: #fff;
+    width: 14rem;
+    height: 13rem;
+
+}
+.FooterContainer .FooterSections .FooterSection1 .Company ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 14px;
+}
+.FooterContainer .FooterSections .FooterSection1 .Company ul h1{
+    font-size: 1.3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.FooterContainer .FooterSections .FooterSection1 .Company ul li{
+    list-style: none;
+    color: #ccc;
+}
+
+
+/*  */
+
+.FooterContainer .FooterSections .FooterSection1 .Help{
+    color: #fff;
+    width: auto;
+    /* background-color: #ccc; */
+    width: 14rem;
+    height: 13rem;
+}
+.FooterContainer .FooterSections .FooterSection1 .Help ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 14px;
+}
+.FooterContainer .FooterSections .FooterSection1 .Help ul h1{
+    font-size: 1.3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.FooterContainer .FooterSections .FooterSection1 .Help ul li{
+    list-style: none;
+    color: #ccc;
+}
+.FooterContainer .FooterSections .FooterSection1  .Payment{
+    /* background-color: aqua; */
+    width: 17rem;
+    height: 13rem;
+    padding: 0.3rem;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 0.9rem;
+
+
+}
+.FooterContainer .FooterSections .FooterSection1  .Payment h1{
+    font-size: 1.3rem;
+    font-weight: normal;
+    color: #fff;
+}
+.FooterContainer .FooterSections .FooterSection1  .Payment .PaymentImages{
+    /* background-color: aqua; */
+    width: 14rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    flex-wrap: wrap;
+}
+.FooterContainer .FooterSections .FooterSection1  .Payment .PaymentImages img{
+    margin-bottom: 0.2rem;
+}
+.FooterContainer .FooterSections .FooterSection1  .Payment p{
+    color: #ccc;
+}
+/* .CopyRight{
+    background-color:#0f1d31;
+    width: 100%;
+    height: 2rem;
+    position: absolute;
+    
+} */
+
+@media (max-width: 768px) {
+  .FooterSections {
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .FooterContainer .FooterSections .FooterSection1 {
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .FooterContainer .FooterSections .FooterSection1 .Language input {
+    width: 100%;
+  }
+
+  .FooterContainer .FooterSections .FooterSection1 .Company,
+  .FooterContainer .FooterSections .FooterSection1 .Help,
+  .FooterContainer .FooterSections .FooterSection1 .Payment {
+    width: 48%;
+    height: auto;
+  }
+
+  .FooterContainer .FooterSections .FooterSection1 .Payment .PaymentImages {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .FooterSections {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 1rem;
+    height: auto;
+  }
+
+  .FooterContainer {
+    height: auto;
+    padding: 1rem;
+  }
+
+  .FooterSection1 {
+    width: 100% !important;
+    height: auto !important;
+    padding: 1rem 0 !important;
+  }
+
+  .FooterSection1 .Language input {
+    width: 100%;
+  }
+
+  .FooterSection1 .Company,
+  .FooterSection1 .Help,
+  .FooterSection1 .Payment {
+    width: 100% !important;
+    height: auto !important;
+    padding: 0.5rem 0;
+  }
+
+  .FooterSection1 .Payment .PaymentImages {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .FooterSection1 .Payment .PaymentImages img {
+    width: 45px;
+    height: auto;
+  }
+
+  .FooterSection1 .Company ul,
+  .FooterSection1 .Help ul {
+    gap: 10px;
+  }
+
+  .FooterSection1 .Company ul h1,
+  .FooterSection1 .Help ul h1,
+  .FooterSection1 .Payment h1 {
+    font-size: 1.1rem;
+  }
+
+  .FooterSection1 .Company ul li,
+  .FooterSection1 .Help ul li,
+  .FooterSection1 .Payment p {
+    font-size: 0.9rem;
+  }
+}

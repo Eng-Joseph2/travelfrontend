@@ -1,0 +1,128 @@
+.display-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px; /* spacing ka dhexeeya cards */
+  padding: 20px;
+  justify-items: center;
+}
+
+.display {
+  width: 370px;
+  border-radius: 3px; /* ka dhig mid wareegsan */
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  font-family: Arial, sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.display:hover {
+  transform: translateY(-5px);
+}
+
+.display img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.display .content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* spacing u dhexeeya qaybaha */
+}
+
+.display .info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #555;
+}
+
+.display .title {
+  font-size: 10px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.display i {
+  gap: 30px;
+}
+
+.display .location {
+  color: #777;
+  font-size: 16px;
+}
+
+.display .price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+
+.display .old-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-left: 52px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.display p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.display button {
+  width: 100%;
+  background: #ff4d4d;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.display button:hover {
+  background: #e60000;
+}
+
+@media (max-width: 992px) {
+  .display-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+  }
+}
+
+/* Mobile view (max 600px) */
+@media (max-width: 600px) {
+  .display-container {
+    grid-template-columns: 1fr; /* 1 column for small screens */
+    padding: 10px;
+    gap: 20px;
+  }
+
+  .display {
+    width: 100%;
+  }
+
+  .display .old-price {
+    margin-left: 0;
+    font-size: 16px;
+  }
+
+  .display .price {
+    font-size: 16px;
+  }
+
+  .display button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

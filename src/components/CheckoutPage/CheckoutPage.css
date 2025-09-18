@@ -1,0 +1,61 @@
+/* Container */
+.checkout-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fefefe;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Heading */
+.checkout-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Form labels */
+.checkout-container label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #555;
+}
+
+/* Form inputs */
+.checkout-container input,
+.checkout-container select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.checkout-container input:focus,
+.checkout-container select:focus {
+  border-color: #007bff;
+}
+
+/* Submit button */
+.checkout-container button {
+  width: 100%;
+  padding: 12px 0;
+  background-color: #28a745;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.checkout-container button:hover {
+  background-color: #218838;
+}

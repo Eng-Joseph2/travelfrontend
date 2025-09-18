@@ -1,0 +1,116 @@
+.ContainerNav {
+  /* height: 2.7rem; */
+  width: 53rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  padding: 0.3rem;
+  border-radius: 0.7rem;
+  /* background-color: #ffda32; */
+}
+.ContainerNav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+.ContainerNav ul li {
+  list-style: none;
+  font-size: 1.15rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+}
+.ContainerNav ul button {
+  background-color: #ffda32;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  width: 7.3rem;
+  height: 2.8rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ContainerNav ul i {
+  font-size: 32px;
+  color: #ffda32;
+}
+
+
+@media (max-width: 768px) {
+  .ContainerNav {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .ContainerNav ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ContainerNav ul li,
+  .ContainerNav ul button {
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem 0;
+    font-size: 1rem;
+  }
+
+  .ContainerNav ul i {
+    font-size: 24px;
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .ContainerNav {
+    flex-direction: row; /* keep items in a row */
+    flex-wrap: wrap; /* allow wrapping if needed */
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.8rem;
+  }
+
+  .ContainerNav ul {
+    flex-direction: row; /* stay in row direction */
+    flex-wrap: wrap; /* wrap to next line if not enough space */
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .ContainerNav ul li,
+  .ContainerNav ul button {
+    font-size: 1rem;
+    padding: 0.5rem 0.8rem;
+    width: auto;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .ContainerNav ul button {
+    border-radius: 1rem;
+    background-color: #ffda32;
+  }
+
+  .ContainerNav ul i {
+    font-size: 24px;
+  }
+}

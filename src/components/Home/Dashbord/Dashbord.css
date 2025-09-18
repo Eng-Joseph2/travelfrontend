@@ -1,0 +1,63 @@
+.dash {
+  width: 230px;
+  height: 100vh;
+  box-shadow: 0 20px 25px -8px rgba(10, 20, 20, 0.3),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+
+  position: fixed; /* Ka dhig mid fixed */
+  top: 0; /* Ku dheji xagga sare */
+
+  background-color: #fff; /* Ku dar background si content-ka kale uusan ka muuqan */
+  z-index: 1000;
+}
+
+.dash1 {
+  display: flex;
+  font-size: 13px;
+  padding-top: 40px;
+  margin-left: 10px;
+  gap: 7px;
+}
+
+.dash1 i {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.dash2 {
+  display: flex;
+  font-size: 13px;
+  padding: 15px 10px;
+  /* margin: 10px; */
+  margin-top: 25px;
+  gap: 7px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: black;
+}
+
+.dash2 i {
+  font-size: 20px;
+  margin-top: 2px;
+}
+
+.dash2 h4 {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+/* Marka la click gareeyo ama uu active yahay */
+.dash2.active {
+  background-color: tomato;
+  color: white;
+  border-radius: 8px;
+}
+
+.btn1 {
+  background-color: gray;
+  padding: 15px 35px 10px 35px;
+  margin-left: 10px;
+  margin-top: 70px;
+  border-radius: 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,108 @@
+.Container{
+    width: 25rem;
+    height: 50rem;
+    background-color: #EDEDED;
+    position: absolute;
+    top: 10rem;
+    right: 1rem;
+    padding: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Container .FormHeader {
+    width:100%;
+    padding: 0.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:start ;
+    align-items: center;
+    gap: 1rem;
+}
+.Container .FormHeader p{
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+}
+.Container  form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 4rem;
+}
+.Container  form input {
+    display: block;
+    width: 19rem;
+    height: 3.5rem;
+    font-size: 1rem;
+    padding: 1rem;
+    outline: none;
+    /* border: 2px solid #ccc; */
+}
+.Container form button{
+    width: 19rem;
+    height: 3rem;
+    background-color: #DF6951;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+/* .invalid{
+    background-color: #ff7255;
+    border: 1px solid red;
+    color: #fff;
+} */
+
+.Container form button:disabled{
+    background-color: gray;
+    color: black;
+    cursor: not-allowed;
+}
+
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .Container {
+    position: static; /* allow natural flow */
+    width: 90%;
+    height: auto;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+
+  .Container form input,
+  .Container form button {
+    width: 100%;
+    height: 3.5rem;
+    font-size: 1rem;
+  }
+
+  .Container .FormHeader {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .Container {
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+    margin: 1rem 0;
+  }
+
+  .Container form input,
+  .Container form button {
+    width: 100%;
+    height: 3rem;
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+
+  .Container .FormHeader p {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    letter-spacing: 0.5px;
+  }
+}
