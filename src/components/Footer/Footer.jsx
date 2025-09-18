@@ -8,7 +8,7 @@ import image5 from "../../Assets/Cards/GPAY.png";
 import image6 from "../../Assets/Cards/MasteCard.png";
 import image7 from "../../Assets/Cards/Mastero.png";
 import image8 from "../../Assets/Cards/PayPal.png";
-import image9 from "../../Assets/Cards/sofert.png";
+import image9 from "../../Assets/Cards/Sofert.png";
 import image10 from "../../Assets/Cards/visa.png";
 
 const Footer = () => {
