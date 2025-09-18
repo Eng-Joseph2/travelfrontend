@@ -1,10 +1,10 @@
 import React from "react";
 import sawwir from "../../Assets/about.png";
 import feature from "../../Assets/featured tours.png";
-import about from "../../Assets/ourimg.png";
+import about from "../../Assets/burimg.png";
 import tours from "../../Assets/tours.png";
 import cost from "../../Assets/Customization.png";
-import Best from "../../Assets/Best.png";
+import Best from "../../Assets/best.png";
 import calcu from "../../Assets/calculate.png";
 import "../ourAboutUs/AboutUs.css";
 import image from '../../Assets/logo 1.png'
